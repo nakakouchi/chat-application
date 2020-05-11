@@ -1,0 +1,58 @@
+.main_chat {
+  width: 800px;
+  height: 1200px;
+  background-color: rgb(248, 245, 245);
+  &__title-name {
+    width: 100%;
+    height: 70px;
+    border-bottom: 3px solid;
+    border-color: rgba(224, 221, 221, 0.842);
+    margin-bottom: 60px;
+  }
+  &__tweets {
+    &__tweet {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      border-color: rgba(224, 221, 221, 0.842);
+      margin: 10px 0 100px 0;
+      .tweet-name {
+        font-size: 1rem;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+
+        .edit-icon {
+          .edit-btn {
+            color: rgba(131, 126, 126, 0.842);
+            font-size: 1.5em;
+          }
+        }
+      }
+      .tweet-image {
+        width: 100%;
+        height: 600px;
+        background-color: green;
+      }
+      .tweet-icons {
+        display: flex;
+        height: 100%;
+        padding: 10px 20px;
+        font-size: 1.8em;
+        .heart-btn {
+          color: rgba(131, 126, 126, 0.842);
+        }
+        .comment-btn {
+          color: rgba(131, 126, 126, 0.842);
+          margin-left: 20px;
+        }
+      }
+      .tweet-text {
+        padding: 10px 20px
+      }
+    }
+  }
+}

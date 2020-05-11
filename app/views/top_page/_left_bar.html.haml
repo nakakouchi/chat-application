@@ -1,0 +1,22 @@
+.left_bar
+  .left_bar__main-icon
+    = icon('fas', 'puzzle-piece')
+  .left_bar__btns
+    .left_bar__btns__btn
+      =link_to root_path,class:"button" do
+        .left_bar__btns__btn__icon
+          = icon('fas', 'home')
+        .left_bar__btns__btn__name
+          ホーム
+    .left_bar__btns__btn
+      =link_to root_path,class:"button" do
+        .left_bar__btns__btn__icon
+          = icon('fas', 'user-alt')
+        .left_bar__btns__btn__name
+          プロフィール
+    .left_bar__btns__btn
+      =link_to root_path,class:"button" do
+        .left_bar__btns__btn__icon
+          = icon('fas', 'paper-plane')
+        .left_bar__btns__btn__name
+          投稿する
