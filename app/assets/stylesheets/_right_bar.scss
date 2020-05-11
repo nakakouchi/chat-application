@@ -1,0 +1,45 @@
+.right_bar {
+  width: 400px;
+  height: 1000px;
+  border-left: 3px solid;
+  border-color: rgba(224, 221, 221, 0.842);
+  background-color: rgb(248, 245, 245);
+  &__user {
+    height: 60px;
+    margin-top: 70px;
+    padding: 10px 60px;
+    .user-name {
+      font-size: 25px;
+      font-family: serif;
+      font-weight: bold;
+      color: rgba(150, 150, 150, 0.842);
+    }
+  }
+  &__search {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    .search {
+      .search-box {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        .search-text {
+          width: 100%;
+          height: 100%;
+          padding-left: 40px;
+          border-radius: 22px;
+          border-color: rgba(224, 221, 221, 0.842);
+        }
+        .search-btn {
+          color: rgba(150, 150, 150, 0.842);;
+          position: absolute;
+          font-size: 1.7em;
+          margin-left: 10px;
+          -webkit-text-stroke: 2.5px white
+        }
+      }
+    }
+  }
+}
