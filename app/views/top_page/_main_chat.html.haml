@@ -2,16 +2,18 @@
   .main_chat__title-name
   .main_chat__tweets
     .main_chat__tweets__tweet
-      .tweet-name
-        中河内
-        .edit-icon
+      - @tweets.each do |tweet|
+        .tweet-name
+          =tweet.name
+          .edit-icon
+            = link_to root_path do
+              = icon('far', 'edit',class:"edit-btn")
+        .tweet-image
+          = image_tag tweet.image
+        .tweet-icons
           = link_to root_path do
-            = icon('far', 'edit',class:"edit-btn")
-      .tweet-image
-      .tweet-icons
-        = link_to root_path do
-          = icon('far', 'heart',class:"heart-btn")
-        = link_to root_path do
-          = icon('far', 'comments',class:"comment-btn")
-      .tweet-text
-        投稿内容が表示されます
+            = icon('far', 'heart',class:"heart-btn")
+          = link_to root_path do
+            = icon('far', 'comments',class:"comment-btn")
+        .tweet-text
+          =tweet.text

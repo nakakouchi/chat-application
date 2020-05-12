@@ -35,7 +35,7 @@
       .tweet-image {
         width: 100%;
         height: 600px;
-        background-color: green;
+        overflow: hidden;
       }
       .tweet-icons {
         display: flex;
