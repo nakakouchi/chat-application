@@ -1,0 +1,14 @@
+.tweets_new
+  .tweets_new__icon
+    =link_to root_path,class:"button" do
+      = icon('fas', 'puzzle-piece')
+  .tweets_new__input-form
+    = form_for @tweet do |form|
+      .tweet-text
+        = form.text_field :text, class: 'text', placeholder: '今どうしてる？'
+      .tweet-image
+        %label{class:"image-file"}
+          = icon('fas', 'image', class: "test")
+          = form.file_field :image, class:"hidden" do
+            %input{type: "hidden",class:"image"}
+          = form.submit '投稿する', class: 'form__submit'

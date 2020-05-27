@@ -1,0 +1,66 @@
+.tweets_new {
+  position: fixed;
+  height: 1000px;
+  width: 100%;
+  background-color: rgb(248, 245, 245);
+  text-align: center;
+  &__icon {
+    .button {
+    color: #59ddf5;
+    font-size: 4.0em;
+    }
+  }
+  &__input-form {
+    background-color: #fff;
+    width: 800px;
+    margin: auto;
+    height: 500px;
+    padding: 40px;
+    .tweet-text {
+      padding-top: 20px;
+      .text {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #222;
+        font-size: 16px;
+        margin: 0;
+        outline: none;
+        padding: 13px 16px;
+        resize: none;
+        vertical-align: middle;
+        width: 700px;
+        height: 300px;
+      }
+    }
+    .tweet-image {
+      text-align: left;
+      padding-top: 20px;
+      display: flex;
+      .image-file {
+        padding-left: 10px;
+        .test {
+          cursor: pointer;
+          font-size: 2.0em;
+          color: #59ddf5;
+        }
+        .hidden {
+          display: none;
+        }
+        
+      }
+      .form__submit {
+        width: 120px;
+        height: 50px;
+        background-color: #59ddf5;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 70px;
+        font-size: 20px;
+        margin-left: 550px;
+        resize: none;
+      }
+    }
+  }
+}
